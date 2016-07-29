@@ -134,7 +134,7 @@ function initialise_document_ready_functions()
         amount_of_pixels_as_buffer_between_sections = 0.25 * ($(window).height()); // used in update_active_sections_on_scroll();
 
         // Sections Content Vertical Position
-        if (!jQuery.browser.mobile) sections_content_vertical_position();
+//        if (!jQuery.browser.mobile) sections_content_vertical_position();
 
         // Main Menu Visiblity on Window Resize
         main_menu_visiblity_on_resize();
@@ -209,13 +209,13 @@ function initialise_window_load_functions()
     tabs_uniform_height();
 
     // Sections Content Vertical Position (when not viewing on a mobile)
-    if (!jQuery.browser.mobile || viewport().width > window.xs_screen_max) sections_content_vertical_position();
+//    if (!jQuery.browser.mobile || viewport().width > window.xs_screen_max) sections_content_vertical_position();
 
     // preload all section background images after all elements were loaded (when not viewing on a mobile)
     if (change_bg_check()) preload_section_backgrounds();
 
     // Grid Items Clearfix
-    if (!jQuery.browser.mobile || viewport().width > window.xs_screen_max) add_clear_items_to_fix_grid_items_different_heights_issue();
+  //  if (!jQuery.browser.mobile || viewport().width > window.xs_screen_max) add_clear_items_to_fix_grid_items_different_heights_issue();
 
     // Load images after other elements are loaded
     load_images("lazy", true, true);
